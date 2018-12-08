@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_8"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_8">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/project_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_collection_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/project_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="让你明明白白的使用RecyclerView——SnapHelper详解"
+                android:textColor="@color/gary_333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/project_desc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_86"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:paddingBottom="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_4"
+                android:gravity="top"
+                android:text="让你明明白白的使用让你明明白白的使用让你明明白白的使用让你明明白白的使用让你明明白白的使用让你明明白白的使用让你明明白白的使用让你明明白白的使用"
+                android:textColor="@color/gary_999999"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/project_push_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018-11-30"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/project_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:maxLines="1"
+                    android:text="Cherry"
+                    android:textColor="@color/gary_999999"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/project_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:scaleType="fitXY"
+        android:layout_weight="3" />
+</LinearLayout>

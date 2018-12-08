@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">玩Android</string>
+    <string name="http_error">数据请求失败</string>
+</resources>

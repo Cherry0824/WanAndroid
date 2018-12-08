@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_style_blue">#276692</color>
+    <color name="collection_blue">#79C0FC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_009a61">#009A61</color>
+    <color name="gary_f5f5f9">#F5F5F9</color>
+    <color name="gary_999999">#999999</color>
+    <color name="gary_666666">#666666</color>
+    <color name="gary_333333">#333333</color>
+    <color name="gary_bfbfbf">#BFBFBF</color>
+
+
+    <color name="blue_d4ccf6">#4DCCF6</color>
+    <color name="pink_ff9999">#FF9999</color>
+    <color name="yellow_999933">#999933</color>
+    <color name="green_009999">#009999</color>
+    <color name="orange_FF9900">#FF9900</color>
+    <color name="red_E24234">#E24234</color>
+</resources>
