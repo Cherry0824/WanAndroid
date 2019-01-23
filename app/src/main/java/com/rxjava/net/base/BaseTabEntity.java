@@ -33,5 +33,4 @@ public class BaseTabEntity {
         this.title = title;
     }
 
-
 }
