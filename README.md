@@ -1,4 +1,4 @@
-# RxNetWork
+# WanAndroid
 基于wanandroid开放API、使用 rxjava2+retrofit2+okhttp+mvp
 
 最贴近网站风格的APP
