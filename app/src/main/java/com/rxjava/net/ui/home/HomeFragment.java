@@ -118,7 +118,7 @@ public class HomeFragment extends BaseFragment<HomePresenter>
 
 
     @OnClick({R.id.left_menu, R.id.user_layout, R.id
-            .user_name, R.id.user_image, R.id.search, R.id.user_collection})
+            .user_name, R.id.user_image, R.id.search, R.id.user_collection,R.id.about})
     public void OnClick(View v) {
         switch (v.getId()) {
             case R.id.left_menu:
@@ -135,7 +135,13 @@ public class HomeFragment extends BaseFragment<HomePresenter>
                 startActivity(new Intent(getActivity(), SearchActivity.class));
                 break;
             case R.id.user_collection:
-                startActivity(new Intent(getActivity(), UserCollectionActivity.class));
+                if (SPUtils.getInstance(Constants.USER).getBoolean(Constants.LOGIN))
+                    startActivity(new Intent(getActivity(), UserCollectionActivity.class));
+                 else
+                    intentLogin();
+                break;
+            case R.id.about:
+                startActivity(new Intent(getActivity(),WebViewActivity.class).putExtra("url","https://www.wanandroid.com/about"));
                 break;
         }
     }
