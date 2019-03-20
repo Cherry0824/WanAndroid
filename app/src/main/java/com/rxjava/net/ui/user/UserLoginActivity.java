@@ -87,8 +87,6 @@ public class UserLoginActivity extends BaseActivity<UserPresenter> implements Us
                     nameLine.setBackgroundColor(ContextCompat.getColor(UserLoginActivity.this, R.color.gary_f5f5f9));
                     clearName.setVisibility(View.GONE);
                 }
-
-
             }
         });
         loginPwd.addTextChangedListener(new TextWatcher() {
@@ -186,8 +184,8 @@ public class UserLoginActivity extends BaseActivity<UserPresenter> implements Us
     public void resultLogin(User user) {
         Toasty.success(this, "登录成功", Toast.LENGTH_SHORT, true).show();
         SPUtils.getInstance(Constants.USER).put(Constants.LOGIN, true);
-        SPUtils.getInstance(Constants.USER).put(Constants.USERNAME, user.getUsername());
-        SPUtils.getInstance(Constants.USER).put(Constants.PASSWORD, user.getPassword());
+        SPUtils.getInstance(Constants.USER).put(Constants.USERNAME, loginName.getText().toString().trim());
+        SPUtils.getInstance(Constants.USER).put(Constants.PASSWORD, loginPwd.getText().toString().trim());
         EventBus.getDefault().post(new MessageEvent(EventBusCode.EVENT_REFRESH_USER));
 
         finish();
@@ -197,8 +195,8 @@ public class UserLoginActivity extends BaseActivity<UserPresenter> implements Us
     public void resultRegister(User user) {
         Toasty.success(this, "注册成功，顺便帮你登录了", Toast.LENGTH_SHORT, true).show();
         SPUtils.getInstance(Constants.USER).put(Constants.LOGIN, true);
-        SPUtils.getInstance(Constants.USER).put(Constants.USERNAME, user.getUsername());
-        SPUtils.getInstance(Constants.USER).put(Constants.PASSWORD, user.getPassword());
+        SPUtils.getInstance(Constants.USER).put(Constants.USERNAME, loginName.getText().toString().trim());
+        SPUtils.getInstance(Constants.USER).put(Constants.PASSWORD, loginPwd.getText().toString().trim());
         EventBus.getDefault().post(new MessageEvent(EventBusCode.EVENT_REFRESH_USER));
         finish();
     }
