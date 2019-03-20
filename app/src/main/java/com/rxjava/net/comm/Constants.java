@@ -8,7 +8,7 @@ import com.rxjava.net.BuildConfig;
 
 public class Constants {
 
-    public static String WAN_ANDROID = BuildConfig.DEBUG ? "http://www.wanandroid.com" : "http://www.wanandroid.com";
+    public static String WAN_ANDROID = BuildConfig.DEBUG ? "https://www.wanandroid.com" : "https://www.wanandroid.com";
     public static final String USER = "user";
     public static final String LOGIN = "login";
     public static final String USERNAME = "username";
